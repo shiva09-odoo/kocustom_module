@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+      <record id="sale_view_order_line_form_ko" model="ir.ui.view">
+     <field name="name">Sale Order Line</field>
+     <field name="model">sale.order</field>
+     <field name="inherit_id" ref="sale.view_order_form" />
+     <field name="arch" type="xml">
+         <xpath expr="//button[@name='Confirm']" position="after">
+             <button name="sale_order_log" class="oe_highlight" 
+                        string="Confirm shipping Order" type="object"/>
+         </xpath>
+     </field>
+     </record>
+
+
+    </data>
+</odoo>
